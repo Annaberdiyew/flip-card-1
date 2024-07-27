@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(214, 213, 157);
+    width: 100%;
+    height: 200vh;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 154, 2);
+}
+header h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+header p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+main{
+   
+    background-color: rgb(255, 154, 2);
+    width: 1480px;
+    height: 500px;
+    margin-left: 20px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+main img{
+    position: relative;
+    top: 50px;
+    left: 400px;
+}
+.birinji{
+    display: flex;
+}
+
+.one{
+   position: relative;
+   top: 50px;
+   text-align: center;
+   /* background-color: rgb(255, 255, 255); */
+   width: 350px;
+   height: 400px;
+   background: transparent;
+   transition: all 0.8s ease;
+}
+
+.main2{
+    background-color: rgb(255, 154, 2);
+    width: 1480px;
+    height: 500px;
+    margin-left: 20px;
+    border-radius: 100px;
+    margin-top: 30px;
+}
+.flip{
+    background-color: rgb(214, 213, 157);
+    /* border: solid 3px rgb(229, 152, 10); */
+    width: 100%;
+    height: 600px;
+  
+}
+.flip-card{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+    top: 50px;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow:  0 4px 8px 0 rgb(0, 0, 0, 0.2); 
+    border-radius: 40px;
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+}
+.flip-card-front{
+    background-color: rgb(238, 172, 5);
+    color: green;
+    border-radius: 40px;
+}
+.flip-card-back{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+    transform: rotateY(180deg);
+    border: solid lightblue 2px;
+}
+.flip-card-back h1{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flip-card-back p{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, monospace;
+}
+.flip-card-back button{
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100px;
+    font-size: 17px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 177, 9);
+}
+.flip-card-back button:hover{
+    background-color: lightblue;
+    transition: all 0.5s ease;
+}
